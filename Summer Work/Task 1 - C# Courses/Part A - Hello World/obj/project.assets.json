@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Summer Work\\Task 1 - C# Courses\\Introduction\\Introduction.csproj",
-      "projectName": "Introduction",
-      "projectPath": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Summer Work\\Task 1 - C# Courses\\Introduction\\Introduction.csproj",
+      "projectUniqueName": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Summer Work\\Task 1 - C# Courses\\Part A - Hello World\\Part A - Hello World.csproj",
+      "projectName": "Part A - Hello World",
+      "projectPath": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Summer Work\\Task 1 - C# Courses\\Part A - Hello World\\Part A - Hello World.csproj",
       "packagesPath": "C:\\Users\\conno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Summer Work\\Task 1 - C# Courses\\Introduction\\obj\\",
+      "outputPath": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Summer Work\\Task 1 - C# Courses\\Part A - Hello World\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\conno\\AppData\\Roaming\\NuGet\\NuGet.Config",
