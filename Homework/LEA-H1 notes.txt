@@ -1,0 +1,12 @@
+randomly choose from either center or one of the corners (decent starting positions)
+run through main loop:
+	check all empty squares to see if the opponent placing a symbol in one of them causes a win for them
+	if one found:
+		place symbol in that square
+	else:
+		check to see if you can win by placing a symbol in a square
+		if you can:
+			place one there
+		else:
+			place randomly
+repeat that loop until a draw or case where the player is able to create two winning moves simultaneously, breaking my algorithm
