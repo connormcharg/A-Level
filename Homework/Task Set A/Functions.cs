@@ -210,5 +210,24 @@ namespace Task_Set_A
             }
             return nums;
         }
+        public static void AltMenu(int current) // Alternative function to display a nicer looking menu system.
+        {
+            string menu = "";
+            string[] options = { "Multiples Of 3\n", "Times Table Grid\n", "Running Total\n", "Largest Element\n", "Reversed Array\n", "Pig Latin Translator\n" };
+            for (int i = 0; i <= 5; i++)
+            {
+                if (i == current)
+                {
+                    menu += "[*] - ";
+                }
+                else
+                {
+                    menu += "[ ] - ";
+                }
+                menu += options[i];
+            }
+            Console.Clear();
+            Console.Write(menu);
+        }
     }
 }
