@@ -179,7 +179,9 @@ namespace Task_Set_A
         {
             int[] nums = new int[] { };
             Console.Write("Would you like to use a randomly generated array of 10 integers? (y/n) : ");
+            Console.ForegroundColor = ConsoleColor.Cyan;
             string randChoice = Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Gray;
             if (randChoice == "y")
             {
                 for (int i = 0; i < 10; i++) // generates a random array of 10 integers between 5 and 100
@@ -189,45 +191,69 @@ namespace Task_Set_A
             }
             else
             {
-                while (true)
+                while (true) // new loop to create custom array including multi value entering
                 {
                     Console.Clear();
                     Console.WriteLine(DisplayArray(nums));
-                    Console.Write("Would you like to add another value? (y/n) : ");
-                    if (Console.ReadLine() == "n")
+                    Console.WriteLine("Press enter to stop entering values or");
+                    Console.Write("Enter integer value(s) with spaces separating them : ");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    string[] vals = Console.ReadLine().ToLower().Split(' ');
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    int val;
+                    if (vals.Length > 1)
+                    {
+                        for (int i = 0; i < vals.Length; i++)
+                        {
+                            if (!int.TryParse(vals[i], out val)) // one of the values is not an integer
+                            {
+                                // Console.WriteLine("Please enter integer values only.");
+                                break;
+                            }
+                            nums = Append(nums, val);
+                        }
+                    }
+                    else if ((vals.Length == 1) && (vals[0] == ""))
                     {
                         break;
                     }
-                    Console.Write("Enter an integer value : ");
-                    int val;
-                    while (!int.TryParse(Console.ReadLine(), out val)) // makes sure the user enters an integer
+                    else
                     {
-                        Console.WriteLine("Please enter an integer.");
-                        Console.Write("Enter an integer value : ");
+                        if (!int.TryParse(vals[0], out val)) // makes sure the user enters an integer
+                        {
+                            Console.WriteLine("Please enter an integer.");
+                            continue;
+                        }
+                        nums = Append(nums, val);
                     }
-                    nums = Append(nums, val);
                 }
             }
             return nums;
         }
-        public static void AltMenu(int current) // Alternative function to display a nicer looking menu system.
+        public static void Menu(int current) // Alternative function to display a nicer looking menu system.
         {
-            string menu = "";
-            string[] options = { "Multiples Of 3\n", "Times Table Grid\n", "Running Total\n", "Largest Element\n", "Reversed Array\n", "Pig Latin Translator\n" };
-            for (int i = 0; i <= 5; i++)
+            string[] options = { "Multiples Of 3", "Times Table Grid", "Running Total", "Largest Element", "Reversed Array", "Pig Latin Translator", "Exit Program" };
+            Console.Clear();
+            Console.WriteLine("Welcome to my program! You are at the main menu.");
+            Console.WriteLine("Use the up/down arrows and the enter key to navigate.");
+            Console.WriteLine("------------------------------------------");
+            for (int i = 0; i <= 6; i++)
             {
-                if (i == current)
+                if (i == current) // makes the colour of the selected option cyan instead of grey.
                 {
-                    menu += "[*] - ";
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.Write("[*] - ");
+                    Console.Write(options[i]);
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine();
                 }
                 else
                 {
-                    menu += "[ ] - ";
+                    Console.Write("[ ] - ");
+                    Console.Write(options[i]);
+                    Console.WriteLine();
                 }
-                menu += options[i];
             }
-            Console.Clear();
-            Console.Write(menu);
         }
     }
 }
