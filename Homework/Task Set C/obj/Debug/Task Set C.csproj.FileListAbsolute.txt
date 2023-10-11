@@ -1,0 +1,7 @@
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Task Set C\bin\Debug\Task Set C.exe.config
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Task Set C\bin\Debug\Task Set C.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Task Set C\bin\Debug\Task Set C.pdb
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Task Set C\obj\Debug\Task Set C.csproj.AssemblyReference.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Task Set C\obj\Debug\Task Set C.csproj.CoreCompileInputs.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Task Set C\obj\Debug\Task Set C.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Task Set C\obj\Debug\Task Set C.pdb
