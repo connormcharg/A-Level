@@ -1,0 +1,7 @@
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\SLR-Prog-1\SLR-Prog-1\bin\Debug\SLR-Prog-1.exe.config
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\SLR-Prog-1\SLR-Prog-1\bin\Debug\SLR-Prog-1.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\SLR-Prog-1\SLR-Prog-1\bin\Debug\SLR-Prog-1.pdb
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\SLR-Prog-1\SLR-Prog-1\obj\Debug\SLR-Prog-1.csproj.AssemblyReference.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\SLR-Prog-1\SLR-Prog-1\obj\Debug\SLR-Prog-1.csproj.CoreCompileInputs.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\SLR-Prog-1\SLR-Prog-1\obj\Debug\SLR-Prog-1.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\SLR-Prog-1\SLR-Prog-1\obj\Debug\SLR-Prog-1.pdb
