@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Task_Set_C
 {
+	/// <summary>
+    /// This is a summary
+    /// </summary>
     internal class Program
     {
         static Random rng = new Random();
@@ -108,6 +111,12 @@ namespace Task_Set_C
             Array.Sort(result);
             return result;
         }
+		/// <summary>
+        /// This is a summary of a function.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         static int[] Intersection(int[] a, int[] b)
         {
             int[] result = new int[] { };
