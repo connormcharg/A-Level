@@ -1,15 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.Data.SQLite;
-using System.Runtime.Remoting.Messaging;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Runtime.Serialization;
-using System.Xml.Linq;
-using System.Threading;
 
 namespace Last_One_Loses_20._10._23
 {
@@ -106,6 +99,7 @@ namespace Last_One_Loses_20._10._23
     public class GameManager
     {
         public GameState gs;
+        public int difficulty = 1; // default is hardest
         public Random rng = new Random();
         public const string DATABASE_FILE = "database.sqlite";
         public static string CONNECTION_STRING = string.Format("Data Source={0};Version=3;", DATABASE_FILE);
@@ -115,6 +109,10 @@ namespace Last_One_Loses_20._10._23
             HandleGame();
         }
 
+        /// <summary>
+        /// A subroutine that handles the main menu and performing
+        /// actions based on the options selected.
+        /// </summary>
         public void HandleGame()
         {
             Console.ForegroundColor = ConsoleColor.Gray;
@@ -128,6 +126,7 @@ namespace Last_One_Loses_20._10._23
                 switch (option)
                 {
                     case 0: // new game ( same players )
+                        Console.Clear();
                         if (gs == null)
                         {
                             Setup();
@@ -137,6 +136,8 @@ namespace Last_One_Loses_20._10._23
                             gs.gameWon = false;
                             gs.count = 12;
                             gs.maxTaken = 3;
+                            gs.players[0].score = 0;
+                            gs.players[1].score = 0;
                             if (FlipCoin())
                             {
                                 gs.players.Reverse();
@@ -144,11 +145,59 @@ namespace Last_One_Loses_20._10._23
                         }
                         PlayGame();
                         break;
-                    case 1: // reset game
+                    case 1: // continue best of 3
+                        LoadGame();
+                        if (gs == null || (gs.players[0].score == 0 && gs.players[1].score == 0))
+                        {
+                            Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("You must play a game before you can continue a best of 3.");
+                            Console.ForegroundColor = ConsoleColor.Gray;
+                            Console.WriteLine("Press any key to return to the main menu.");
+                            Console.ReadKey();
+                            break;
+                        }
+                        else
+                        {
+                            if (gs.players[0].score == 2 || gs.players[1].score == 2)
+                            {
+                                Console.Clear();
+                                Console.WriteLine("Best of 3 already completed.");
+                                Console.WriteLine("Resetting game...");
+                                if (CheckForSave())
+                                {
+                                    File.Delete("save.bin");
+                                }
+                                Console.WriteLine("Press any key to return to the main menu.");
+                                Console.ReadKey();
+                                gs.count = 12;
+                                gs.maxTaken = 3;
+                                gs.players[0].score = 0;
+                                gs.players[1].score = 0;
+                                break;
+                            }
+                            Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.Gray;
+                            gs.gameWon = false;
+                            gs.count = 12;
+                            gs.maxTaken = 3;
+                            if (FlipCoin())
+                            {
+                                gs.players.Reverse();
+                            }
+                            PlayGame();
+                        }
+                        break;
+                    case 2: // reset game
+                        Console.Clear();
+                        if (CheckForSave())
+                        {
+                            File.Delete("save.bin");
+                        }
                         Setup();
                         PlayGame();
                         break;
-                    case 2: // view high scores
+                    case 3: // view high scores
                         string[,] scores = LoadScores();
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.Gray;
@@ -164,7 +213,39 @@ namespace Last_One_Loses_20._10._23
                         Console.WriteLine("...");
                         Console.ReadKey();
                         break;
-                    case 3: // exit game
+                    case 4: // difficulty options
+                        Console.Clear();
+                        Console.WriteLine("Would you like the AI to be easy, medium or hard? (1/2/3): ");
+                        int diff = 0;
+                        while (!int.TryParse(Console.ReadLine(), out diff) || diff < 1 || diff > 3)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Invalid input. Please enter 1, 2 or 3: ");
+                            Console.ForegroundColor = ConsoleColor.Gray;
+                        }
+                        Console.WriteLine("Difficulty set to {0}.", diff);
+                        difficulty = 4 - diff;
+                        break;
+                    case 5: // clear high scores
+                        Console.Clear();
+                        Console.Write("Are you sure you want to clear the high scores? (Y/N): ");
+                        string input = Console.ReadLine().ToLower();
+                        if (input == "y")
+                        {
+                            string sql = "DELETE FROM highScores;";
+                            SQLiteConnection sqlConn = new SQLiteConnection(CONNECTION_STRING);
+                            SQLiteCommand command = new SQLiteCommand(sql, sqlConn);
+                            sqlConn.Open();
+                            using (var update = new SQLiteCommand(sql, sqlConn))
+                            {
+                                int rowsAffected = update.ExecuteNonQuery();
+                            }
+                            sqlConn.Close();
+                            Console.WriteLine("High scores cleared.");
+                            Console.ReadKey();
+                        }
+                        break;
+                    case 6: // exit game
                         handle = false;
                         Console.WriteLine("Thank you for playing Last One Loses!");
                         Console.ReadKey();
@@ -174,37 +255,59 @@ namespace Last_One_Loses_20._10._23
             }
         }
 
+        /// <summary>
+        /// A function to display the main menu and allow the user to select an option.
+        /// The function will return the index of the selected option.
+        /// </summary>
+        /// <returns>an index of the selected option as int</returns>
         private int Menu()
         {
-            string[] options = new string[] { "New Game (same players)", "Reset Game", "View High Scores", "Exit Game" };
+            string[] options = new string[] { "New Game (same players)", "Continue Best Of 3", "Reset Game", "View High Scores", "Change Difficulty", "Clear High Scores", "Exit Game" };
             int option = 0;
             while (true)
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Gray;
+                Console.WriteLine("Welcome to Last One Loses!");
                 Console.WriteLine("Main Menu (arrow keys to navigate):");
+                int max = 0;
+                foreach (string s in options)
+                {
+                    if (s.Length > max) { max = s.Length; }
+                }
+                for (int i = 0; i < max + 9; i++) { Console.Write("-"); }
+                Console.WriteLine("-");
+                string spacing = "";
                 for (int i = 0; i < options.Length; i++)
                 {
+                    for (int j = 0; j <= max - options[i].Length; j++) { spacing += " "; }
                     if (i == option)
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine($"[*] - {options[i]}");
+                        Console.Write($"- [*] - {options[i]}{spacing}");
+                        Console.WriteLine("-");
                         Console.ForegroundColor = ConsoleColor.Gray;
                     }
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Gray;
-                        Console.WriteLine($"[ ] - {options[i]}");
+                        Console.Write($"- [ ] - {options[i]}{spacing}");
+                        Console.WriteLine("-");
                     }
+                    spacing = "";
                 }
+                for (int i = 0; i < max + 9; i++) { Console.Write("-"); }
+                Console.WriteLine("-");
                 ConsoleKey key = Console.ReadKey().Key;
                 switch (key)
                 {
                     case ConsoleKey.UpArrow:
                         if (option > 0) { option--; }
+                        else if (option == 0 ) { option = options.Length - 1; }
                         break;
                     case ConsoleKey.DownArrow:
                         if (option < options.Length - 1) { option++; }
+                        else if (option == options.Length - 1) { option = 0; }
                         break;
                     case ConsoleKey.Enter:
                         return option;
@@ -212,6 +315,9 @@ namespace Last_One_Loses_20._10._23
             }
         }
 
+        /// <summary>
+        /// A subroutine to perform the main logic of the game running.
+        /// </summary>
         public void PlayGame()
         {
             Console.Clear();
@@ -227,7 +333,7 @@ namespace Last_One_Loses_20._10._23
                     int move = 0;
                     if (gs.players[i].name == "AI")
                     {
-                        move = gs.GetAIMove(1); // max difficulty
+                        move = gs.GetAIMove(difficulty); // max difficulty
                         gs.count -= move;
                         Console.WriteLine("The AI removed {0} matches.", move);
                     }
@@ -252,8 +358,30 @@ namespace Last_One_Loses_20._10._23
                         {
                             IncreaseScore(winner);
                         }
+                        for (int j = 0; j < gs.players.Count; j++)
+                        {
+                            if (gs.players[j].name == winner)
+                            {
+                                gs.players[j].score++;
+                            }
+                        }
+                        if (gs.players[0].score == 2 || gs.players[1].score == 2)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("{0} wins the best of 3!", winner);
+                            Console.ForegroundColor = ConsoleColor.Gray;
+                            gs.count = 12;
+                            gs.maxTaken = 3;
+                            gs.players[0].score = 0;
+                            gs.players[1].score = 0;
+                        }
                         Console.WriteLine("Press any key to return to the main menu!");
                         Console.ReadKey();
+                        if (CheckForSave())
+                        {
+                            File.Delete("save.bin");
+                        }
+                        return;
                     }
                     Console.WriteLine("---------------------------------");
                 }
@@ -265,6 +393,11 @@ namespace Last_One_Loses_20._10._23
             }
         }
 
+        /// <summary>
+        /// A function to get the winner's name from the loser's name.
+        /// </summary>
+        /// <param name="loser"></param>
+        /// <returns>winner's name as string</returns>
         public string GetWinnerName(string loser)
         {
             if (gs.players[0].name == loser)
@@ -277,16 +410,22 @@ namespace Last_One_Loses_20._10._23
             }
         }
 
+        /// <summary>
+        /// Simple random number generator to simulate a coin flip.
+        /// </summary>
+        /// <returns></returns>
         private bool FlipCoin()
         {
             int num = rng.Next(0, 2);
             return num == 1;
         }
 
+        /// <summary>
+        /// A subroutine to setup a new game with new players.
+        /// </summary>
         public void Setup()
         {
             Console.ForegroundColor = ConsoleColor.Gray;
-            Console.WriteLine("Welcome to Last One Loses!");
             if (CheckForSave())
             {
                 Console.WriteLine("Would you like to load a saved game? (Y/N)");
@@ -297,6 +436,10 @@ namespace Last_One_Loses_20._10._23
                     Console.WriteLine("The saved game has been successfully loaded.");
                     Console.ReadKey();
                     return;
+                }
+                else
+                {
+                    File.Delete("save.bin");
                 }
             }
             // main menu
@@ -359,6 +502,9 @@ namespace Last_One_Loses_20._10._23
             gs = new GameState(twoPlayer, 12, players, 3);
         }
 
+        /// <summary>
+        /// A subroutine to load a saved game from a file.
+        /// </summary>
         public void LoadGame()
         {
             if (CheckForSave())
@@ -369,6 +515,9 @@ namespace Last_One_Loses_20._10._23
             }
         }
 
+        /// <summary>
+        /// A subroutine to save the current gamestate to a file.
+        /// </summary>
         public void SaveGame()
         {
             if (CheckForSave())
@@ -382,6 +531,12 @@ namespace Last_One_Loses_20._10._23
             fs.Close();
         }
 
+        /// <summary>
+        /// A subroutine to serialize a given GameState object into a given filestream.
+        /// This allows for a GameState object to be saved to a file.
+        /// </summary>
+        /// <param name="gs"></param>
+        /// <param name="fs"></param>
         private void Serialize(GameState gs, FileStream fs)
         {
             BinaryFormatter bf = new BinaryFormatter();
@@ -395,7 +550,13 @@ namespace Last_One_Loses_20._10._23
                 Console.WriteLine("Failed to serialize. Reason: " + e.Message);
             }
         }
-
+        
+        /// <summary>
+        /// A function to deserialize a given filestream.
+        /// This allows for a save.bin file to be opened and loaded into a GameState object.
+        /// </summary>
+        /// <param name="fs"></param>
+        /// <returns></returns>
         private GameState Deserialize(FileStream fs)
         {
             BinaryFormatter bf = new BinaryFormatter();
@@ -411,7 +572,11 @@ namespace Last_One_Loses_20._10._23
             }
             return data;
         }
-
+        
+        /// <summary>
+        /// A function to perform a check to see if a save file exists.
+        /// </summary>
+        /// <returns>bool</returns>
         public bool CheckForSave()
         {
             return File.Exists("save.bin");
@@ -509,10 +674,7 @@ namespace Last_One_Loses_20._10._23
     {
         static void Main(string[] args)
         {
-            //GameState gs = new GameState(false, 0, new List<Player>(), 3);
-            
             GameManager gm = new GameManager();
-
         }
     }
 }
