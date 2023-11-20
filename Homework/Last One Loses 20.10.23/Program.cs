@@ -101,6 +101,7 @@ namespace Last_One_Loses_20._10._23
         public GameState gs;
         public int difficulty = 1; // default is hardest
         public Random rng = new Random();
+        // these values define the database file and connection string
         public const string DATABASE_FILE = "database.sqlite";
         public static string CONNECTION_STRING = string.Format("Data Source={0};Version=3;", DATABASE_FILE);
         public GameManager(GameState gs = null)

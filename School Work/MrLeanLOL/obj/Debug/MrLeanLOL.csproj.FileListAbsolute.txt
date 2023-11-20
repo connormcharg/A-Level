@@ -1,0 +1,7 @@
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\School Work\MrLeanLOL\bin\Debug\MrLeanLOL.exe.config
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\School Work\MrLeanLOL\bin\Debug\MrLeanLOL.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\School Work\MrLeanLOL\bin\Debug\MrLeanLOL.pdb
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\School Work\MrLeanLOL\obj\Debug\MrLeanLOL.csproj.AssemblyReference.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\School Work\MrLeanLOL\obj\Debug\MrLeanLOL.csproj.CoreCompileInputs.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\School Work\MrLeanLOL\obj\Debug\MrLeanLOL.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\School Work\MrLeanLOL\obj\Debug\MrLeanLOL.pdb
