@@ -1,0 +1,8 @@
+NEA IDEA: FLASHCARDS
+
+Modes:
+
+Flashcard Mode (long-term learning)
+Learn Mode (short-term learning)
+Test Mode (quizzing)
+Match Mode (quickfire game)
