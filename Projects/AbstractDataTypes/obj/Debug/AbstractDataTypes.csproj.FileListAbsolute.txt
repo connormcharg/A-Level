@@ -1,0 +1,7 @@
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\AbstractDataTypes\bin\Debug\AbstractDataTypes.exe.config
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\AbstractDataTypes\bin\Debug\AbstractDataTypes.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\AbstractDataTypes\bin\Debug\AbstractDataTypes.pdb
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\AbstractDataTypes\obj\Debug\AbstractDataTypes.csproj.AssemblyReference.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\AbstractDataTypes\obj\Debug\AbstractDataTypes.csproj.CoreCompileInputs.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\AbstractDataTypes\obj\Debug\AbstractDataTypes.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\AbstractDataTypes\obj\Debug\AbstractDataTypes.pdb
