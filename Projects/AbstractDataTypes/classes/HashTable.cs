@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AbstractDataTypes.classes
 {
-    internal class HashTable
+    public class HashTable
     {
     }
 }

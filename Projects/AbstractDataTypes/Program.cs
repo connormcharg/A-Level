@@ -7,7 +7,7 @@ using AbstractDataTypes.classes;
 
 namespace AbstractDataTypes
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -26,7 +26,7 @@ namespace AbstractDataTypes
             n2.Data = 4;
             ll.Add(n2, 2);
 
-            ll.Set(1, 10);
+            ll[1] = 10;
 
             Console.WriteLine(ll.Length());
             Console.WriteLine(ll.ToString());
@@ -34,6 +34,15 @@ namespace AbstractDataTypes
             Console.WriteLine(ll.Find(11));
 
             ll.Remove(2);
+            Console.WriteLine(ll.ToString());
+
+
+            LinkedList ll2 = new LinkedList();
+            ll2.Add(new Node(5));
+            ll2.Add(new Node(3));
+
+            ll.Extend(ll2);
+
             Console.WriteLine(ll.ToString());
 
         }

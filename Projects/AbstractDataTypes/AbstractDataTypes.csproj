@@ -48,6 +48,7 @@
     <Compile Include="classes\Graph.cs" />
     <Compile Include="classes\HashTable.cs" />
     <Compile Include="classes\LinkedList.cs" />
+    <Compile Include="classes\Node.cs" />
     <Compile Include="classes\PriorityQueue.cs" />
     <Compile Include="classes\Queue.cs" />
     <Compile Include="classes\Stack.cs" />

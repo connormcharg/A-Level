@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AbstractDataTypes.classes
 {
-    internal class Tree
+    public class Tree
     {
     }
 }
