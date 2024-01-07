@@ -253,7 +253,7 @@ namespace AbstractDataTypes.classes
         /// A function to perform a linear search for a given data value in a linked list.
         /// </summary>
         /// <param name="value">An integer that determines the value to search for.</param>
-        /// <returns>An integer that is the first occ</returns>
+        /// <returns>An integer that is the first occurence of the search value in the linked list.</returns>
         public int Find(int value)
         {
             int n = Length();
