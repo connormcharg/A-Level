@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="classes\CircularQueue.cs" />
     <Compile Include="classes\Dictionary.cs" />
     <Compile Include="classes\Graph.cs" />
     <Compile Include="classes\HashTable.cs" />
@@ -51,6 +50,7 @@
     <Compile Include="classes\Node.cs" />
     <Compile Include="classes\PriorityQueue.cs" />
     <Compile Include="classes\Queue.cs" />
+    <Compile Include="classes\QueueNode.cs" />
     <Compile Include="classes\Stack.cs" />
     <Compile Include="classes\Tree.cs" />
     <Compile Include="Program.cs" />
