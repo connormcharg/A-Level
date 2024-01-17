@@ -1,8 +1,31 @@
-NEA IDEA: FLASHCARDS
+NEA IDEAS: 
 
-Modes:
-
+Flashcards App:
 Flashcard Mode (long-term learning)
 Learn Mode (short-term learning)
 Test Mode (quizzing)
 Match Mode (quickfire game)
+
+Rubik's Cube Solver:
+Step by step solutions to any position
+animations
+random scramble generator
+
+Evolution Simulator:
+Give creatures a map to "play" on
+creatures have energy and health levels
+add food, shelter, dangers to the map
+conditions for if they can reproduce each day ect...
+allow the user to design maps themselves and maps to be imported/exported
+simulate different behavoural traits that animals exhibit
+
+Space simulator 2d, maybe 3d:
+ability to add objects and give them velocities and accelerations
+watch how they interact with other objects through gravity
+simulating collisions and path tracing
+animations, art
+
+Sodoku solver:
+uses backtracking algorithm to find the solution to a sodoku puzzle
+
+
