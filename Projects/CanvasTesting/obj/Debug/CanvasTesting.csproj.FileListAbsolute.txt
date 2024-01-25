@@ -1,0 +1,10 @@
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\CanvasTesting\bin\Debug\CanvasTesting.exe.config
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\CanvasTesting\bin\Debug\CanvasTesting.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\CanvasTesting\bin\Debug\CanvasTesting.pdb
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\CanvasTesting\obj\Debug\CanvasTesting.csproj.AssemblyReference.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\CanvasTesting\obj\Debug\CanvasTesting.frmMain.resources
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\CanvasTesting\obj\Debug\CanvasTesting.Properties.Resources.resources
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\CanvasTesting\obj\Debug\CanvasTesting.csproj.GenerateResource.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\CanvasTesting\obj\Debug\CanvasTesting.csproj.CoreCompileInputs.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\CanvasTesting\obj\Debug\CanvasTesting.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\CanvasTesting\obj\Debug\CanvasTesting.pdb
