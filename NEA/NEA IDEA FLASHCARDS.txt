@@ -29,3 +29,21 @@ Sodoku solver:
 uses backtracking algorithm to find the solution to a sodoku puzzle
 
 
+
+
+
+
+Evolution Simulator:
+Give creatures a map to "play" on
+creatures have energy and health levels
+add food, shelter, dangers to the map
+conditions for if they can reproduce each day ect...
+allow the user to design maps themselves and maps to be imported/exported
+simulate different behavoural traits that animals exhibit
+
+creature:
+	hp, energy, characteristics (speed, aggression, ...)
+
+map:
+	2d array of strings ("F" for food, "S" for shelter, "D" for danger)
+

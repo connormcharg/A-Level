@@ -1,0 +1,29 @@
+linked list
+	int Length()
+	void Add(node, i) ( with overloads for "add to at index x" )
+	void Remove(i)
+	int Get(x)
+	void Set(x to be y)
+	override string ToString()
+	int Find(x)
+stack
+	int Length()
+	void Push(node)
+	void Pop()
+	int Peek()
+	override string ToString()
+queue
+	int Length()
+	override string ToString()
+	void Enqueue(Node node)
+	node Dequeue()
+priority queue
+	each node has an extra field, priority int
+	change queue/dequeue methods accordingly
+hash table
+dictionary
+graphs
+dijkstra's algorithm
+DFS/BFS
+trees
+tree traversal
