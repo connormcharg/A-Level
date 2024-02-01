@@ -29,10 +29,6 @@ Sodoku solver:
 uses backtracking algorithm to find the solution to a sodoku puzzle
 
 
-
-
-
-
 Evolution Simulator:
 Give creatures a map to "play" on
 creatures have energy and health levels
