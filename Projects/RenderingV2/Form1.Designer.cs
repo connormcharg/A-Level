@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.tmrTick = new System.Windows.Forms.Timer(this.components);
             this.lblFPS = new System.Windows.Forms.Label();
+            this.pbxFrame = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFrame)).BeginInit();
             this.SuspendLayout();
             // 
             // tmrTick
@@ -48,15 +50,25 @@
             this.lblFPS.TabIndex = 0;
             this.lblFPS.Text = "0 fps";
             // 
+            // pbxFrame
+            // 
+            this.pbxFrame.Location = new System.Drawing.Point(16, 12);
+            this.pbxFrame.Name = "pbxFrame";
+            this.pbxFrame.Size = new System.Drawing.Size(772, 410);
+            this.pbxFrame.TabIndex = 1;
+            this.pbxFrame.TabStop = false;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pbxFrame);
             this.Controls.Add(this.lblFPS);
             this.Name = "frmMain";
             this.Text = "Main";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFrame)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -66,6 +78,7 @@
 
         private System.Windows.Forms.Timer tmrTick;
         private System.Windows.Forms.Label lblFPS;
+        private System.Windows.Forms.PictureBox pbxFrame;
     }
 }
 
