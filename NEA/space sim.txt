@@ -1,0 +1,12 @@
+space sim:
+
+rendering objects
+constant time clock - check
+	- 10tps
+constant scale for the screen (how many pixels is a metre/how many metres is a pixel) - check
+	- 940x500px = 9.4*10^7m x 5*10^7m
+	- 100_000m = 1 pixels
+	
+
+performance improvements:
+	- store forces as pure i,j components instead of having to find angles

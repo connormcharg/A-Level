@@ -1,0 +1,10 @@
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\NEA\SpaceSimulator\bin\Debug\SpaceSimulator.exe.config
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\NEA\SpaceSimulator\bin\Debug\SpaceSimulator.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\NEA\SpaceSimulator\bin\Debug\SpaceSimulator.pdb
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\NEA\SpaceSimulator\obj\Debug\SpaceSimulator.csproj.AssemblyReference.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\NEA\SpaceSimulator\obj\Debug\SpaceSimulator.frmMain.resources
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\NEA\SpaceSimulator\obj\Debug\SpaceSimulator.Properties.Resources.resources
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\NEA\SpaceSimulator\obj\Debug\SpaceSimulator.csproj.GenerateResource.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\NEA\SpaceSimulator\obj\Debug\SpaceSimulator.csproj.CoreCompileInputs.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\NEA\SpaceSimulator\obj\Debug\SpaceSimulator.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\NEA\SpaceSimulator\obj\Debug\SpaceSimulator.pdb
