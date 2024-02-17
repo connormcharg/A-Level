@@ -16,4 +16,4 @@ def is_pandigital(n):
 for i in prime_list[::-1]:
     if is_pandigital(i):
         print(i, "PANDIGITAL")
-        exit(1)
+        exit(0)
