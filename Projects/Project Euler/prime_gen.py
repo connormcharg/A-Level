@@ -14,6 +14,6 @@ def primes(n):
             prime_list.append(i)
     return prime_list
 
-with open("c:/Users/conno/Onedrive/Documents/Github/A-Level/Projects/Project Euler/primes_100_million.json", "w+") as f:
-    f.write(json.dumps({"primes": primes(100_000_000)}))
+with open("c:/Users/conno/Onedrive/Documents/Github/A-Level/Projects/Project Euler/primes_million.json", "w+") as f:
+    f.write(json.dumps({"primes": primes(1_000_000)}))
 
