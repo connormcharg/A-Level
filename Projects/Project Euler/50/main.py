@@ -1,5 +1,4 @@
 import json
-import math
 
 with open("c:/Users/conno/Onedrive/Documents/Github/A-Level/Projects/Project Euler/primes_million.json", "r") as f:
     primes = json.loads(f.read())["primes"]
@@ -7,17 +6,21 @@ with open("c:/Users/conno/Onedrive/Documents/Github/A-Level/Projects/Project Eul
 max_length = 0
 max_prime = 0
 
+# primes = primes[:5]
+# print(primes)
+
 prime_set = set(primes)
 
-print(sum(primes[3:24]))
+n = 1000
 
+# print(sum(primes[3:24]))
 
-for j in range(0, len(primes)):
-    for k in range(1, len(primes)-j-1):
-        if sum(primes[j:j+k+1]) in prime_set:
-            if k+1 > max_length:
-                max_length = k+1
-                max_prime = sum(primes[j:j+k+1])
-                print(max_prime, max_length)
+for i in range(0, n): # for every starting point
+    for j in range(1, n-i): # for every length of run
+        s = sum(primes[i:i+j+1])
+        if s in prime_set:
+            if j > max_length:
+                max_length = j
+                max_prime = s
 
 print(max_prime, max_length)
