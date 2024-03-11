@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.8.34511.84
+VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rendering", "Rendering.csproj", "{055CC86E-ADBB-4751-95D6-85AE7283570E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rendering", "Rendering.csproj", "{878FB2D6-ADB6-4051-89F1-55B11DFD1D14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{055CC86E-ADBB-4751-95D6-85AE7283570E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{055CC86E-ADBB-4751-95D6-85AE7283570E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{055CC86E-ADBB-4751-95D6-85AE7283570E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{055CC86E-ADBB-4751-95D6-85AE7283570E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{878FB2D6-ADB6-4051-89F1-55B11DFD1D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878FB2D6-ADB6-4051-89F1-55B11DFD1D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878FB2D6-ADB6-4051-89F1-55B11DFD1D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878FB2D6-ADB6-4051-89F1-55B11DFD1D14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6B04DC4D-88A3-4D8B-B8F9-56D97BCCEA92}
+		SolutionGuid = {26EB5B0D-92D5-433E-894F-680965D0C05F}
 	EndGlobalSection
 EndGlobal

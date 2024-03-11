@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SkiaSharp;
 
 namespace Rendering
 {
@@ -17,9 +18,9 @@ namespace Rendering
             InitializeComponent();
         }
 
-        private void tmrGameTick_Tick(object sender, EventArgs e)
+        private void frmMain_Load(object sender, EventArgs e)
         {
-
+            return;
         }
     }
 }
