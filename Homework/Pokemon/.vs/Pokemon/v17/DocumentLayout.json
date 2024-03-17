@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Homework\\Pokemon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9EFA6E-4FF7-449D-86F9-D7442376EC87}|Pokemon2.csproj|C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Homework\\Pokemon\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D9EFA6E-4FF7-449D-86F9-D7442376EC87}|Pokemon2.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9EFA6E-4FF7-449D-86F9-D7442376EC87}|Pokemon2.csproj|C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Homework\\Pokemon\\classes\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D9EFA6E-4FF7-449D-86F9-D7442376EC87}|Pokemon2.csproj|solutionrelative:classes\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9EFA6E-4FF7-449D-86F9-D7442376EC87}|Pokemon2.csproj|c:\\users\\conno\\onedrive\\documents\\github\\a-level\\homework\\pokemon\\classes\\myrichtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D9EFA6E-4FF7-449D-86F9-D7442376EC87}|Pokemon2.csproj|solutionrelative:classes\\myrichtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Homework\\Pokemon\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Homework\\Pokemon\\frmMain.cs",
+              "RelativeToolTip": "frmMain.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAmwFYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T21:48:07.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyRichTextBox.cs",
+              "DocumentMoniker": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Homework\\Pokemon\\classes\\MyRichTextBox.cs",
+              "RelativeDocumentMoniker": "classes\\MyRichTextBox.cs",
+              "ToolTip": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Homework\\Pokemon\\classes\\MyRichTextBox.cs",
+              "RelativeToolTip": "classes\\MyRichTextBox.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T18:03:00.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pokemon.cs",
+              "DocumentMoniker": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Homework\\Pokemon\\classes\\Pokemon.cs",
+              "RelativeDocumentMoniker": "classes\\Pokemon.cs",
+              "ToolTip": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\Homework\\Pokemon\\classes\\Pokemon.cs",
+              "RelativeToolTip": "classes\\Pokemon.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAACAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T16:20:03.264Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

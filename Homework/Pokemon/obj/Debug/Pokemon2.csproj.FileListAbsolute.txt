@@ -1,0 +1,239 @@
+U:\Year 12\Computer Science\Pokemon\bin\Debug\resources\bg.png
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Pokemon.exe.config
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Pokemon.exe
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Pokemon.pdb
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Extensions.Options.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Extensions.Primitives.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Newtonsoft.Json.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Buffers.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Collections.Immutable.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Memory.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Numerics.Vectors.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Text.Encodings.Web.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Text.Json.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Threading.Tasks.Extensions.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.ValueTuple.dll
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Extensions.Options.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Microsoft.Extensions.Primitives.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\Newtonsoft.Json.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Buffers.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Collections.Immutable.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Memory.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Numerics.Vectors.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Text.Encodings.Web.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Text.Json.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.Threading.Tasks.Extensions.xml
+U:\Year 12\Computer Science\Pokemon\bin\Debug\System.ValueTuple.xml
+U:\Year 12\Computer Science\Pokemon\obj\Debug\Pokemon2.csproj.SuggestedBindingRedirects.cache
+U:\Year 12\Computer Science\Pokemon\obj\Debug\PokeGame.frmMain.resources
+U:\Year 12\Computer Science\Pokemon\obj\Debug\Pokemon.Properties.Resources.resources
+U:\Year 12\Computer Science\Pokemon\obj\Debug\Pokemon2.csproj.GenerateResource.cache
+U:\Year 12\Computer Science\Pokemon\obj\Debug\Pokemon2.csproj.CoreCompileInputs.cache
+U:\Year 12\Computer Science\Pokemon\obj\Debug\Pokemon2.csproj.CopyComplete
+U:\Year 12\Computer Science\Pokemon\obj\Debug\Pokemon.exe
+U:\Year 12\Computer Science\Pokemon\obj\Debug\Pokemon.pdb
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\obj\Debug\Pokemon2.csproj.AssemblyReference.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\obj\Debug\PokeGame.frmMain.resources
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\obj\Debug\Pokemon.Properties.Resources.resources
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\obj\Debug\Pokemon2.csproj.GenerateResource.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\obj\Debug\Pokemon2.csproj.CoreCompileInputs.cache
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\resources\bg.png
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\resources\pokefont.ttf
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Pokemon.exe.config
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Pokemon.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Pokemon.pdb
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Newtonsoft.Json.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Buffers.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Collections.Immutable.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Memory.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Text.Json.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.ValueTuple.dll
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\Newtonsoft.Json.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Buffers.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Collections.Immutable.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Memory.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Text.Json.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\System.ValueTuple.xml
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\obj\Debug\Pokemon2.csproj.Up2Date
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\obj\Debug\Pokemon.exe
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\obj\Debug\Pokemon.pdb
+U:\downloads\Pokemon\bin\Debug\resources\bg.png
+U:\downloads\Pokemon\bin\Debug\resources\logo.png
+U:\downloads\Pokemon\bin\Debug\resources\pokefont.ttf
+U:\downloads\Pokemon\bin\Debug\Pokemon.exe.config
+U:\downloads\Pokemon\bin\Debug\Pokemon.exe
+U:\downloads\Pokemon\bin\Debug\Pokemon.pdb
+U:\downloads\Pokemon\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+U:\downloads\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+U:\downloads\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+U:\downloads\Pokemon\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+U:\downloads\Pokemon\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+U:\downloads\Pokemon\bin\Debug\Microsoft.Extensions.Options.dll
+U:\downloads\Pokemon\bin\Debug\Microsoft.Extensions.Primitives.dll
+U:\downloads\Pokemon\bin\Debug\Newtonsoft.Json.dll
+U:\downloads\Pokemon\bin\Debug\System.Buffers.dll
+U:\downloads\Pokemon\bin\Debug\System.Collections.Immutable.dll
+U:\downloads\Pokemon\bin\Debug\System.Memory.dll
+U:\downloads\Pokemon\bin\Debug\System.Numerics.Vectors.dll
+U:\downloads\Pokemon\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+U:\downloads\Pokemon\bin\Debug\System.Text.Encodings.Web.dll
+U:\downloads\Pokemon\bin\Debug\System.Text.Json.dll
+U:\downloads\Pokemon\bin\Debug\System.Threading.Tasks.Extensions.dll
+U:\downloads\Pokemon\bin\Debug\System.ValueTuple.dll
+U:\downloads\Pokemon\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+U:\downloads\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+U:\downloads\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+U:\downloads\Pokemon\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+U:\downloads\Pokemon\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+U:\downloads\Pokemon\bin\Debug\Microsoft.Extensions.Options.xml
+U:\downloads\Pokemon\bin\Debug\Microsoft.Extensions.Primitives.xml
+U:\downloads\Pokemon\bin\Debug\Newtonsoft.Json.xml
+U:\downloads\Pokemon\bin\Debug\System.Buffers.xml
+U:\downloads\Pokemon\bin\Debug\System.Collections.Immutable.xml
+U:\downloads\Pokemon\bin\Debug\System.Memory.xml
+U:\downloads\Pokemon\bin\Debug\System.Numerics.Vectors.xml
+U:\downloads\Pokemon\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+U:\downloads\Pokemon\bin\Debug\System.Text.Encodings.Web.xml
+U:\downloads\Pokemon\bin\Debug\System.Text.Json.xml
+U:\downloads\Pokemon\bin\Debug\System.Threading.Tasks.Extensions.xml
+U:\downloads\Pokemon\bin\Debug\System.ValueTuple.xml
+U:\downloads\Pokemon\obj\Debug\Pokemon2.csproj.SuggestedBindingRedirects.cache
+U:\downloads\Pokemon\obj\Debug\PokeGame.frmMain.resources
+U:\downloads\Pokemon\obj\Debug\Pokemon.Properties.Resources.resources
+U:\downloads\Pokemon\obj\Debug\Pokemon2.csproj.GenerateResource.cache
+U:\downloads\Pokemon\obj\Debug\Pokemon2.csproj.CoreCompileInputs.cache
+U:\downloads\Pokemon\obj\Debug\Pokemon2.csproj.CopyComplete
+U:\downloads\Pokemon\obj\Debug\Pokemon.exe
+U:\downloads\Pokemon\obj\Debug\Pokemon.pdb
+D:\Pokemon\bin\Debug\resources\bg.png
+D:\Pokemon\bin\Debug\resources\logo.png
+D:\Pokemon\bin\Debug\resources\pokefont.ttf
+D:\Pokemon\bin\Debug\Pokemon.exe.config
+D:\Pokemon\bin\Debug\Pokemon.exe
+D:\Pokemon\bin\Debug\Pokemon.pdb
+D:\Pokemon\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\Pokemon\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Pokemon\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Pokemon\bin\Debug\Microsoft.Extensions.Options.dll
+D:\Pokemon\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\Pokemon\bin\Debug\Newtonsoft.Json.dll
+D:\Pokemon\bin\Debug\System.Buffers.dll
+D:\Pokemon\bin\Debug\System.Collections.Immutable.dll
+D:\Pokemon\bin\Debug\System.Memory.dll
+D:\Pokemon\bin\Debug\System.Numerics.Vectors.dll
+D:\Pokemon\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Pokemon\bin\Debug\System.Text.Encodings.Web.dll
+D:\Pokemon\bin\Debug\System.Text.Json.dll
+D:\Pokemon\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Pokemon\bin\Debug\System.ValueTuple.dll
+D:\Pokemon\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\Pokemon\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Pokemon\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Pokemon\bin\Debug\Microsoft.Extensions.Options.xml
+D:\Pokemon\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\Pokemon\bin\Debug\Newtonsoft.Json.xml
+D:\Pokemon\bin\Debug\System.Buffers.xml
+D:\Pokemon\bin\Debug\System.Collections.Immutable.xml
+D:\Pokemon\bin\Debug\System.Memory.xml
+D:\Pokemon\bin\Debug\System.Numerics.Vectors.xml
+D:\Pokemon\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Pokemon\bin\Debug\System.Text.Encodings.Web.xml
+D:\Pokemon\bin\Debug\System.Text.Json.xml
+D:\Pokemon\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Pokemon\bin\Debug\System.ValueTuple.xml
+D:\Pokemon\obj\Debug\Pokemon2.csproj.AssemblyReference.cache
+D:\Pokemon\obj\Debug\Pokemon2.csproj.SuggestedBindingRedirects.cache
+D:\Pokemon\obj\Debug\PokeGame.frmMain.resources
+D:\Pokemon\obj\Debug\Pokemon.Properties.Resources.resources
+D:\Pokemon\obj\Debug\Pokemon2.csproj.GenerateResource.cache
+D:\Pokemon\obj\Debug\Pokemon2.csproj.CoreCompileInputs.cache
+D:\Pokemon\obj\Debug\Pokemon2.csproj.CopyComplete
+D:\Pokemon\obj\Debug\Pokemon.exe
+D:\Pokemon\obj\Debug\Pokemon.pdb
+H:\Pokemon\bin\Debug\resources\bg.png
+H:\Pokemon\bin\Debug\resources\logo.png
+H:\Pokemon\bin\Debug\resources\pokefont.ttf
+H:\Pokemon\bin\Debug\Pokemon.exe.config
+H:\Pokemon\bin\Debug\Pokemon.exe
+H:\Pokemon\bin\Debug\Pokemon.pdb
+H:\Pokemon\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+H:\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+H:\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+H:\Pokemon\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+H:\Pokemon\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+H:\Pokemon\bin\Debug\Microsoft.Extensions.Options.dll
+H:\Pokemon\bin\Debug\Microsoft.Extensions.Primitives.dll
+H:\Pokemon\bin\Debug\Newtonsoft.Json.dll
+H:\Pokemon\bin\Debug\System.Buffers.dll
+H:\Pokemon\bin\Debug\System.Collections.Immutable.dll
+H:\Pokemon\bin\Debug\System.Memory.dll
+H:\Pokemon\bin\Debug\System.Numerics.Vectors.dll
+H:\Pokemon\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+H:\Pokemon\bin\Debug\System.Text.Encodings.Web.dll
+H:\Pokemon\bin\Debug\System.Text.Json.dll
+H:\Pokemon\bin\Debug\System.Threading.Tasks.Extensions.dll
+H:\Pokemon\bin\Debug\System.ValueTuple.dll
+H:\Pokemon\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+H:\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+H:\Pokemon\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+H:\Pokemon\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+H:\Pokemon\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+H:\Pokemon\bin\Debug\Microsoft.Extensions.Options.xml
+H:\Pokemon\bin\Debug\Microsoft.Extensions.Primitives.xml
+H:\Pokemon\bin\Debug\Newtonsoft.Json.xml
+H:\Pokemon\bin\Debug\System.Buffers.xml
+H:\Pokemon\bin\Debug\System.Collections.Immutable.xml
+H:\Pokemon\bin\Debug\System.Memory.xml
+H:\Pokemon\bin\Debug\System.Numerics.Vectors.xml
+H:\Pokemon\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+H:\Pokemon\bin\Debug\System.Text.Encodings.Web.xml
+H:\Pokemon\bin\Debug\System.Text.Json.xml
+H:\Pokemon\bin\Debug\System.Threading.Tasks.Extensions.xml
+H:\Pokemon\bin\Debug\System.ValueTuple.xml
+H:\Pokemon\obj\Debug\Pokemon2.csproj.AssemblyReference.cache
+H:\Pokemon\obj\Debug\PokeGame.frmMain.resources
+H:\Pokemon\obj\Debug\Pokemon.Properties.Resources.resources
+H:\Pokemon\obj\Debug\Pokemon2.csproj.GenerateResource.cache
+H:\Pokemon\obj\Debug\Pokemon2.csproj.CoreCompileInputs.cache
+H:\Pokemon\obj\Debug\Pokemon2.csproj.Up2Date
+H:\Pokemon\obj\Debug\Pokemon.exe
+H:\Pokemon\obj\Debug\Pokemon.pdb
+C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Pokemon\bin\Debug\resources\logo.png
