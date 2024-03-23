@@ -13,11 +13,11 @@ namespace SpaceSimulator.classes
         public static double _gConstant = 6.67 * Math.Pow(10, -11);
         public static double _dConstant = Math.Pow(10, 5); // 10^5 m per pixel
 
-        public static double[] Resolve(Force f)
+        public static double[] Resolve(double magnitude, double direction)
         {
             double[] result = new double[2];
-            result[0] = Math.Round(Math.Cos(f.Direction) * f.Magnitude, _precision);
-            result[1] = Math.Round(Math.Sin(f.Direction) * f.Magnitude, _precision);
+            result[0] = Math.Round(Math.Cos(direction) * magnitude, _precision);
+            result[1] = Math.Round(Math.Sin(direction) * magnitude, _precision);
             return result;
         }
 
@@ -28,20 +28,24 @@ namespace SpaceSimulator.classes
 
             foreach (Force f in a.Forces)
             {
-                double[] components = Resolve(f);
-                xComponent += components[0];
-                yComponent += components[1];
+                xComponent += f.components[0];
+                yComponent += f.components[1];
             }
 
-            double r = DirectionHelper(0, xComponent, 0, yComponent);
-            double m = Math.Round(Math.Sqrt(Math.Pow(xComponent, 2) + Math.Pow(yComponent, 2)), _precision);
+            return new Force(xComponent, yComponent);
+        }
 
-            return new Force(m, r);
+        private static double[] ForceToComponent(Force f)
+        {
+            double[] components = new double[2];
+            components[0] = f.components[0];
+            components[1] = f.components[1];
+            return components;
         }
 
         public static double[] GetAcceleration(Object a)
         {
-            double[] components = Resolve(Resultant(a));
+            double[] components = ForceToComponent(Resultant(a));
 
             //f = ma --> a = f/m
             components[0] = Math.Round(components[0] / a.Mass, _precision);
@@ -59,16 +63,21 @@ namespace SpaceSimulator.classes
         public static Force Gravitational(Object a, Object b)
         {
             // F = Gm1m2 / r^2
-            Force R = new Force();
+            double magnitude;
+            double direction;
 
             // find magnitude from newton's law of gravitation
             double r = Calc.Displacement(a, b);
             double f = (_gConstant*a.Mass*b.Mass)/(Math.Pow(r, 2));
-            R.Magnitude = Math.Round(f, _precision);
+            magnitude = Math.Round(f, _precision);
 
             // find direction in radians from a to b
             double d = Calc.Direction(a, b);
-            R.Direction = d;
+            direction = d;
+
+            double[] components = Resolve(magnitude, direction);
+
+            Force R = new Force(components[0], components[1]);
 
             return R;
         }

@@ -2,24 +2,23 @@
 {
     public class Force
     {
-        public double Magnitude { get; set; } // N
-        public double Direction { get; set; } // radians
+        public double[] components;
 
         public Force()
         {
-            Magnitude = 0.0;
-            Direction = 0.0;
+            components = new double[2];
         }
-        
-        public Force(double magnitude, double direction)
+
+        public Force(double x, double y)
         {
-            Magnitude = magnitude;
-            Direction = direction;
+            components = new double[2];
+            components[0] = x;
+            components[1] = y;
         }
 
         public override string ToString()
         {
-            return $"{Magnitude}, {Direction}";
+            return $"{components[0]}, {components[1]}";
         }
     }
 }

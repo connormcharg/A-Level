@@ -24,7 +24,7 @@ namespace SpaceSimulator
         public DateTime _lastCheckTimeFps = DateTime.Now;
         public DateTime _lastCheckTimeTps = DateTime.Now;
         public List<Point> points;
-        public int _TimeToLive = 75;
+        public int _TimeToLive = 10000;
 
         public frmMain()
         {
@@ -35,35 +35,70 @@ namespace SpaceSimulator
 
             objects = new List<Object>();
             points = new List<Point>();
-            timeScale = 1000;
+            timeScale = 10000;
             timeScale = 1 / timeScale;
 
-            // earth
+            // // earth
+            // objects.Add(new Object());
+            // objects[0].Mass = 5.97 * Math.Pow(10, 24);
+            // objects[0].Position[0] = -3 * Math.Pow(10, 7); objects[0].Position[1] = 0 * Math.Pow(10, 7);
+            // objects[0].Acceleration[0] = 0; objects[0].Acceleration[1] = 0;
+            // objects[0].Velocity[0] = 0; objects[0].Velocity[1] = -16000;
+            // objects[0].Color = Brushes.Blue;
+
+            // // moon
+            // objects.Add(new Object());
+            // objects[1].Mass = 7.35 * Math.Pow(10, 22);
+            // //objects[1].Mass = 5.97 * Math.Pow(10, 24);
+            // objects[1].Position[0] = -2.9 * Math.Pow(10, 7); objects[1].Position[1] = 0.1 * Math.Pow(10, 7);
+            // objects[1].Acceleration[0] = 0; objects[1].Acceleration[1] = 0;
+            // objects[1].Velocity[0] = -4000; objects[1].Velocity[1] = 0;
+            // objects[1].Color = Brushes.Gray;
+            // objects[1].Size[0] = 10; objects[1].Size[1] = 10;
+
+            // // sun
+            // objects.Add(new Object());
+            // objects[2].Mass = 1.989 * Math.Pow(10, 26);
+            // objects[2].Position[0] = 0; objects[2].Position[1] = 0;
+            // objects[2].Acceleration[0] = 0; objects[2].Acceleration[1] = 0;
+            // objects[2].Velocity[0] = 0; objects[2].Velocity[1] = 0;
+            // objects[2].Color = Brushes.Yellow;
+            // objects[2].Size[0] = 50; objects[2].Size[1] = 50;
+
+            // // mars
+            // objects.Add(new Object());
+            // objects[3].Mass = 6.42 * Math.Pow(10, 23);
+            // objects[3].Position[0] = 2.3 * Math.Pow(10, 7); objects[3].Position[1] = 0;
+            // objects[3].Acceleration[0] = 0; objects[3].Acceleration[1] = 0;
+            // objects[3].Velocity[0] = 0; objects[3].Velocity[1] = 24000;
+            // objects[3].Color = Brushes.Red;
+            // objects[3].Size[0] = 20; objects[3].Size[1] = 20;
+
+            // // venus
+            // objects.Add(new Object());
+            // objects[4].Mass = 4.87 * Math.Pow(10, 24);
+            // objects[4].Position[0] = 1.1 * Math.Pow(10, 7); objects[4].Position[1] = 0;
+            // objects[4].Acceleration[0] = 0; objects[4].Acceleration[1] = 0;
+            // objects[4].Velocity[0] = 0; objects[4].Velocity[1] = 35000;
+            // objects[4].Color = Brushes.Orange;
+            // objects[4].Size[0] = 15; objects[4].Size[1] = 15;
+
+            // binary stars
             objects.Add(new Object());
-            objects[0].Mass = 5.97 * Math.Pow(10, 24);
-            objects[0].Position[0] = -3 * Math.Pow(10, 7); objects[0].Position[1] = 0 * Math.Pow(10, 7);
+            objects[0].Mass = 1.989 * Math.Pow(10, 25);
+            objects[0].Position[0] = -2 * Math.Pow(10, 7); objects[0].Position[1] = 0;
             objects[0].Acceleration[0] = 0; objects[0].Acceleration[1] = 0;
-            objects[0].Velocity[0] = 0; objects[0].Velocity[1] = -16000;
-            objects[0].Color = Brushes.Blue;
+            objects[0].Velocity[0] = 0; objects[0].Velocity[1] = -4063; // 4063
+            objects[0].Color = Brushes.Yellow;
+            objects[0].Size[0] = 50; objects[0].Size[1] = 50;
 
-            // moon
             objects.Add(new Object());
-            objects[1].Mass = 7.35 * Math.Pow(10, 22);
-            //objects[1].Mass = 5.97 * Math.Pow(10, 24);
-            objects[1].Position[0] = -2.9 * Math.Pow(10, 7); objects[1].Position[1] = 0.1 * Math.Pow(10, 7);
+            objects[1].Mass = 1.989 * Math.Pow(10, 25);
+            objects[1].Position[0] = 2 * Math.Pow(10, 7); objects[1].Position[1] = 0;
             objects[1].Acceleration[0] = 0; objects[1].Acceleration[1] = 0;
-            objects[1].Velocity[0] = -4000; objects[1].Velocity[1] = 0;
-            objects[1].Color = Brushes.Gray;
-            objects[1].Size[0] = 10; objects[1].Size[1] = 10;
-
-            // sun
-            objects.Add(new Object());
-            objects[2].Mass = 1.989 * Math.Pow(10, 26);
-            objects[2].Position[0] = 0; objects[2].Position[1] = 0;
-            objects[2].Acceleration[0] = 0; objects[2].Acceleration[1] = 0;
-            objects[2].Velocity[0] = 0; objects[2].Velocity[1] = 0;
-            objects[2].Color = Brushes.Yellow;
-            objects[2].Size[0] = 50; objects[2].Size[1] = 50;
+            objects[1].Velocity[0] = 0; objects[1].Velocity[1] = 4063;
+            objects[1].Color = Brushes.Yellow;
+            objects[1].Size[0] = 50; objects[1].Size[1] = 50;
 
             tmrPhysics.Interval = 10;
             tmrRender.Interval = 10;
