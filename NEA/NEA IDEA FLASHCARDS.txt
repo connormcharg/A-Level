@@ -25,10 +25,6 @@ watch how they interact with other objects through gravity
 simulating collisions and path tracing
 animations, art
 
-Sodoku solver:
-uses backtracking algorithm to find the solution to a sodoku puzzle
-
-
 Evolution Simulator:
 Give creatures a map to "play" on
 creatures have energy and health levels
