@@ -1,7 +1,0 @@
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\Vernam Cipher\bin\Debug\Vernam Cipher.exe.config
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\Vernam Cipher\bin\Debug\Vernam Cipher.exe
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\Vernam Cipher\bin\Debug\Vernam Cipher.pdb
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\Vernam Cipher\obj\Debug\Vernam Cipher.csproj.AssemblyReference.cache
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\Vernam Cipher\obj\Debug\Vernam Cipher.csproj.CoreCompileInputs.cache
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\Vernam Cipher\obj\Debug\Vernam Cipher.exe
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Projects\Vernam Cipher\obj\Debug\Vernam Cipher.pdb
