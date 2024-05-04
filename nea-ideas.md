@@ -4,8 +4,6 @@ Possible project ideas so far:
 
 - N-Body Simulation
 
-
-
 Genetic Algorithm:
 
 - Simulate a survival of the fittest situation with animals?
@@ -16,8 +14,6 @@ Genetic Algorithm:
 
 - Implement generational learning?
 
-
-
 N-Body Simulation:
 
 - Simulate the chaotic nature of more than two bodies interacting with eachother.
@@ -25,5 +21,3 @@ N-Body Simulation:
 - Display use of complex mathematical concepts to achieve this.
 
 - 
-
-
