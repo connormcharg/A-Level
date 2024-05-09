@@ -4,6 +4,10 @@ Possible project ideas so far:
 
 - N-Body Simulation
 
+
+
+
+
 Genetic Algorithm:
 
 - Simulate a survival of the fittest situation with animals?
@@ -13,6 +17,10 @@ Genetic Algorithm:
 - Design a series of puzzles for it to solve?
 
 - Implement generational learning?
+
+
+
+
 
 N-Body Simulation:
 
