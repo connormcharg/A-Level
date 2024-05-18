@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "J5CVxmw9rKcAgME+mXzMpDtbcf3UXNR9ha757a359cX+EpzVviXpb8N6oSSJFre52ZiAjRyiImgbz+hqdgLqJw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessForms\\ChessForms.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\conno\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\conno\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\conno\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\conno\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512"
+  ],
+  "logs": []
+}
