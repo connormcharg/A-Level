@@ -1,6 +1,6 @@
 ﻿namespace ChessForms
 {
-    partial class Form1
+    partial class ChessForms
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            pnlBoard = new Panel();
+            SuspendLayout();
+            // 
+            // pnlBoard
+            // 
+            pnlBoard.Location = new Point(12, 12);
+            pnlBoard.Name = "pnlBoard";
+            pnlBoard.Size = new Size(512, 512);
+            pnlBoard.TabIndex = 0;
+            // 
+            // ChessForms
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(534, 536);
+            Controls.Add(pnlBoard);
+            Name = "ChessForms";
+            Text = "ChessForms";
+            Load += ChessForms_Load;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel pnlBoard;
     }
 }

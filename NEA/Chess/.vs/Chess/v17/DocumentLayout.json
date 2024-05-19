@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58823870-F0D5-4CFE-97B2-4237544FBE97}|ChessForms\\ChessForms.csproj|c:\\users\\conno\\onedrive\\documents\\github\\a-level\\nea\\chess\\chessforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{58823870-F0D5-4CFE-97B2-4237544FBE97}|ChessForms\\ChessForms.csproj|solutionrelative:chessforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FF73BB4-B1B2-4876-8EBA-BAAE77113D24}|ChessEngine\\ChessEngine.csproj|c:\\users\\conno\\onedrive\\documents\\github\\a-level\\nea\\chess\\chessengine\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FF73BB4-B1B2-4876-8EBA-BAAE77113D24}|ChessEngine\\ChessEngine.csproj|solutionrelative:chessengine\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58823870-F0D5-4CFE-97B2-4237544FBE97}|ChessForms\\ChessForms.csproj|C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\chessforms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58823870-F0D5-4CFE-97B2-4237544FBE97}|ChessForms\\ChessForms.csproj|solutionrelative:chessforms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,26 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessForms\\Form1.cs",
-              "RelativeDocumentMoniker": "ChessForms\\Form1.cs",
-              "ToolTip": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessForms\\Form1.cs [Design]",
-              "RelativeToolTip": "ChessForms\\Form1.cs [Design]",
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessForms\\frmMain.cs",
+              "RelativeDocumentMoniker": "ChessForms\\frmMain.cs",
+              "ToolTip": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessForms\\frmMain.cs",
+              "RelativeToolTip": "ChessForms\\frmMain.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T20:43:30.085Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Move.cs",
-              "DocumentMoniker": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessEngine\\Move.cs",
-              "RelativeDocumentMoniker": "ChessEngine\\Move.cs",
-              "ToolTip": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessEngine\\Move.cs",
-              "RelativeToolTip": "ChessEngine\\Move.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T19:54:41.748Z",
+              "WhenOpened": "2024-05-18T21:08:56.093Z",
               "EditorCaption": ""
             }
           ]
