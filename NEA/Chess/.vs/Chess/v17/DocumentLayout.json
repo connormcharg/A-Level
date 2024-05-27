@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58823870-F0D5-4CFE-97B2-4237544FBE97}|ChessForms\\ChessForms.csproj|C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\chessforms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8657A668-2BE9-46D5-AA5A-8CF41E2CF884}|ChessBlazorServer\\ChessBlazorServer.csproj|c:\\users\\conno\\onedrive\\documents\\github\\a-level\\nea\\chess\\chessblazorserver\\pages\\chess.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8657A668-2BE9-46D5-AA5A-8CF41E2CF884}|ChessBlazorServer\\ChessBlazorServer.csproj|solutionrelative:chessblazorserver\\pages\\chess.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8657A668-2BE9-46D5-AA5A-8CF41E2CF884}|ChessBlazorServer\\ChessBlazorServer.csproj|c:\\users\\conno\\onedrive\\documents\\github\\a-level\\nea\\chess\\chessblazorserver\\hubs\\chessgamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8657A668-2BE9-46D5-AA5A-8CF41E2CF884}|ChessBlazorServer\\ChessBlazorServer.csproj|solutionrelative:chessblazorserver\\hubs\\chessgamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58823870-F0D5-4CFE-97B2-4237544FBE97}|ChessForms\\ChessForms.csproj|c:\\users\\conno\\onedrive\\documents\\github\\a-level\\nea\\chess\\chessforms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58823870-F0D5-4CFE-97B2-4237544FBE97}|ChessForms\\ChessForms.csproj|solutionrelative:chessforms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frmMain.cs",
               "DocumentMoniker": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessForms\\frmMain.cs",
               "RelativeDocumentMoniker": "ChessForms\\frmMain.cs",
               "ToolTip": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessForms\\frmMain.cs",
               "RelativeToolTip": "ChessForms\\frmMain.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T21:08:56.093Z",
+              "WhenOpened": "2024-05-19T15:38:35.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Chess.razor",
+              "DocumentMoniker": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessBlazorServer\\Pages\\Chess.razor",
+              "RelativeDocumentMoniker": "ChessBlazorServer\\Pages\\Chess.razor",
+              "ToolTip": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessBlazorServer\\Pages\\Chess.razor",
+              "RelativeToolTip": "ChessBlazorServer\\Pages\\Chess.razor",
+              "ViewState": "AQIAACYAAAAAAAAAAAAWwCwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T15:10:58.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChessGameHub.cs",
+              "DocumentMoniker": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessBlazorServer\\Hubs\\ChessGameHub.cs",
+              "RelativeDocumentMoniker": "ChessBlazorServer\\Hubs\\ChessGameHub.cs",
+              "ToolTip": "C:\\Users\\conno\\OneDrive\\Documents\\GitHub\\A-Level\\NEA\\Chess\\ChessBlazorServer\\Hubs\\ChessGameHub.cs",
+              "RelativeToolTip": "ChessBlazorServer\\Hubs\\ChessGameHub.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T15:04:37.74Z",
               "EditorCaption": ""
             }
           ]
