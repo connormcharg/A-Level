@@ -1,7 +1,0 @@
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Exam Practice Questions\LEA-H12\bin\Debug\LEA-H12.exe.config
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Exam Practice Questions\LEA-H12\bin\Debug\LEA-H12.exe
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Exam Practice Questions\LEA-H12\bin\Debug\LEA-H12.pdb
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Exam Practice Questions\LEA-H12\obj\Debug\LEA-H12.csproj.AssemblyReference.cache
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Exam Practice Questions\LEA-H12\obj\Debug\LEA-H12.csproj.CoreCompileInputs.cache
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Exam Practice Questions\LEA-H12\obj\Debug\LEA-H12.exe
-C:\Users\conno\OneDrive\Documents\GitHub\A-Level\Homework\Exam Practice Questions\LEA-H12\obj\Debug\LEA-H12.pdb
