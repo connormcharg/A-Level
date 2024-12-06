@@ -1,20 +1,11 @@
-﻿//Skeleton Program code for the AQA A Level Paper 1 Summer 2025 examination
-//this code should be used in conjunction with the Preliminary Material
-//written by the AQA Programmer Team
-//developed in the Visual Studio Community Edition programming environment
+﻿using System.Text.RegularExpressions;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-
-namespace TargetClearCS
+namespace Original
 {
     internal class Program
     {
         static Random RGen = new Random();
-
+            
         static void Main(string[] args)
         {
             List<int> NumbersAllowed = new List<int>();
@@ -44,7 +35,7 @@ namespace TargetClearCS
             PlayGame(Targets, NumbersAllowed, TrainingGame, MaxTarget, MaxNumber);
             Console.ReadLine();
         }
-        
+
         static void PlayGame(List<int> Targets, List<int> NumbersAllowed, bool TrainingGame, int MaxTarget, int MaxNumber)
         {
             int Score = 0;
@@ -82,7 +73,7 @@ namespace TargetClearCS
             Console.WriteLine("Game over!");
             DisplayScore(Score);
         }
-        
+
         static bool CheckIfUserInputEvaluationIsATarget(List<int> Targets, List<string> UserInputInRPN, ref int Score)
         {
             int UserInputEvaluation = EvaluateRPN(UserInputInRPN);
@@ -101,7 +92,7 @@ namespace TargetClearCS
             }
             return UserInputEvaluationIsATarget;
         }
-        
+
         static void RemoveNumbersUsed(string UserInput, int MaxNumber, List<int> NumbersAllowed)
         {
             List<string> UserInputInRPN = ConvertToRPN(UserInput);
@@ -116,7 +107,7 @@ namespace TargetClearCS
                 }
             }
         }
-        
+
         static void UpdateTargets(List<int> Targets, bool TrainingGame, int MaxTarget)
         {
             for (int Count = 0; Count < Targets.Count - 1; Count++)
@@ -133,7 +124,7 @@ namespace TargetClearCS
                 Targets.Add(GetTarget(MaxTarget));
             }
         }
-        
+
         static bool CheckNumbersUsedAreAllInNumbersAllowed(List<int> NumbersAllowed, List<string> UserInputInRPN, int MaxNumber)
         {
             List<int> Temp = new List<int>();
@@ -170,21 +161,21 @@ namespace TargetClearCS
             }
             return false;
         }
-        
+
         static void DisplayState(List<int> Targets, List<int> NumbersAllowed, int Score)
         {
             DisplayTargets(Targets);
             DisplayNumbersAllowed(NumbersAllowed);
             DisplayScore(Score);
         }
-        
+
         static void DisplayScore(int Score)
         {
             Console.WriteLine($"Current score: {Score}");
             Console.WriteLine();
             Console.WriteLine();
         }
-        
+
         static void DisplayNumbersAllowed(List<int> NumbersAllowed)
         {
             Console.Write("Numbers available: ");
@@ -195,7 +186,7 @@ namespace TargetClearCS
             Console.WriteLine();
             Console.WriteLine();
         }
-        
+
         static void DisplayTargets(List<int> Targets)
         {
             Console.Write("|");
@@ -214,7 +205,7 @@ namespace TargetClearCS
             Console.WriteLine();
             Console.WriteLine();
         }
-        
+
         static List<string> ConvertToRPN(string UserInput)
         {
             int Position = 0;
@@ -256,7 +247,7 @@ namespace TargetClearCS
             }
             return UserInputInRPN;
         }
-        
+
         static int EvaluateRPN(List<string> UserInputInRPN)
         {
             List<string> S = new List<string>();
@@ -299,7 +290,7 @@ namespace TargetClearCS
                 return -1;
             }
         }
-        
+
         static int GetNumberFromUserInput(string UserInput, ref int Position)
         {
             string Number = "";
@@ -329,22 +320,22 @@ namespace TargetClearCS
                 return Convert.ToInt32(Number);
             }
         }
-        
+
         static bool CheckIfUserInputValid(string UserInput)
         {
             return Regex.IsMatch(UserInput, @"^([0-9]+[\+\-\*\/])+[0-9]+$");
         }
-        
+
         static int GetTarget(int MaxTarget)
         {
             return RGen.Next(MaxTarget) + 1;
         }
-        
+
         static int GetNumber(int MaxNumber)
         {
             return RGen.Next(MaxNumber) + 1;
         }
-        
+
         static List<int> CreateTargets(int SizeOfTargets, int MaxTarget)
         {
             List<int> Targets = new List<int>();
@@ -358,7 +349,7 @@ namespace TargetClearCS
             }
             return Targets;
         }
-        
+
         static List<int> FillNumbers(List<int> NumbersAllowed, bool TrainingGame, int MaxNumber)
         {
             if (TrainingGame)
