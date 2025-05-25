@@ -15,31 +15,44 @@ namespace Original
 
         static void Main(string[] args)
         {
-            List<int> NumbersAllowed = new List<int>();
-            List<int> Targets;
-            int MaxNumberOfTargets = 20;
-            int MaxTarget;
-            int MaxNumber;
-            bool TrainingGame;
-            Console.Write("Enter y to play the training game, anything else to play a random game: ");
-            string Choice = Console.ReadLine().ToLower();
-            Console.WriteLine();
-            if (Choice == "y")
+            //List<int> NumbersAllowed = new List<int>();
+            //List<int> Targets;
+            //int MaxNumberOfTargets = 20;
+            //int MaxTarget;
+            //int MaxNumber;
+            //bool TrainingGame;
+            //Console.Write("Enter y to play the training game, anything else to play a random game: ");
+            //string Choice = Console.ReadLine().ToLower();
+            //Console.WriteLine();
+            //if (Choice == "y")
+            //{
+            //    MaxNumber = 1000;
+            //    MaxTarget = 1000;
+            //    TrainingGame = true;
+            //    Targets = new List<int> { -1, -1, -1, -1, -1, 23, 9, 140, 82, 121, 34, 45, 68, 75, 34, 23, 119, 43, 23, 119 };
+            //}
+            //else
+            //{
+            //    MaxNumber = 10;
+            //    MaxTarget = 50;
+            //    TrainingGame = false;
+            //    Targets = CreateTargets(MaxNumberOfTargets, MaxTarget);
+            //}
+            //NumbersAllowed = FillNumbers(NumbersAllowed, TrainingGame, MaxNumber);
+            //PlayGame(Targets, NumbersAllowed, TrainingGame, MaxTarget, MaxNumber);
+            //Console.ReadLine();
+
+            var l = ConvertToRPN("2^3^4");
+            var o = "";
+
+            foreach (var i in l)
             {
-                MaxNumber = 1000;
-                MaxTarget = 1000;
-                TrainingGame = true;
-                Targets = new List<int> { -1, -1, -1, -1, -1, 23, 9, 140, 82, 121, 34, 45, 68, 75, 34, 23, 119, 43, 23, 119 };
+                o += i;
             }
-            else
-            {
-                MaxNumber = 10;
-                MaxTarget = 50;
-                TrainingGame = false;
-                Targets = CreateTargets(MaxNumberOfTargets, MaxTarget);
-            }
-            NumbersAllowed = FillNumbers(NumbersAllowed, TrainingGame, MaxNumber);
-            PlayGame(Targets, NumbersAllowed, TrainingGame, MaxTarget, MaxNumber);
+
+            Console.WriteLine(o);
+
+            Console.WriteLine(EvaluateRPN(l));
             Console.ReadLine();
         }
 
@@ -218,12 +231,19 @@ namespace Original
             int Position = 0;
             Dictionary<string, int> Precedence = new Dictionary<string, int>
             {
-                { "+", 2 }, { "-", 2 }, { "*", 4 }, { "/", 4 }
+                { "+", 2 }, { "-", 2 }, { "*", 4 }, { "/", 4 }, { "^", 6 }
+            };
+            Dictionary<string, string> Associativity = new Dictionary<string, string>
+            {
+                { "+", "L" }, { "-", "L" }, { "*", "L" }, { "/", "L" }, { "^", "R" }
             };
             List<string> Operators = new List<string>();
             int Operand = GetNumberFromUserInput(UserInput, ref Position);
             List<string> UserInputInRPN = new List<string> { Operand.ToString() };
-            Operators.Add(UserInput[Position - 1].ToString());
+            if (Position < UserInput.Length)
+            {
+                Operators.Add(UserInput[Position - 1].ToString());
+            }
             while (Position < UserInput.Length)
             {
                 Operand = GetNumberFromUserInput(UserInput, ref Position);
@@ -231,15 +251,23 @@ namespace Original
                 if (Position < UserInput.Length)
                 {
                     string CurrentOperator = UserInput[Position - 1].ToString();
-                    while (Operators.Count > 0 && Precedence[Operators[Operators.Count - 1]] > Precedence[CurrentOperator])
+                    while (Operators.Count > 0)
                     {
-                        UserInputInRPN.Add(Operators[Operators.Count - 1]);
-                        Operators.RemoveAt(Operators.Count - 1);
-                    }
-                    if (Operators.Count > 0 && Precedence[Operators[Operators.Count - 1]] == Precedence[CurrentOperator])
-                    {
-                        UserInputInRPN.Add(Operators[Operators.Count - 1]);
-                        Operators.RemoveAt(Operators.Count - 1);
+                        string TopOperator = Operators[Operators.Count - 1];
+                        int topPrec = Precedence[TopOperator];
+                        int currPrec = Precedence[CurrentOperator];
+                        string currAssoc = Associativity[CurrentOperator];
+
+                        if ((currAssoc == "L" && topPrec >= currPrec) ||
+                            (currAssoc == "R" && topPrec > currPrec))
+                        {
+                            UserInputInRPN.Add(TopOperator);
+                            Operators.RemoveAt(Operators.Count - 1);
+                        }
+                        else
+                        {
+                            break;
+                        }
                     }
                     Operators.Add(CurrentOperator);
                 }
@@ -260,7 +288,7 @@ namespace Original
             List<string> S = new List<string>();
             while (UserInputInRPN.Count > 0)
             {
-                while (!"+-*/".Contains(UserInputInRPN[0]))
+                while (!"+-*/^".Contains(UserInputInRPN[0]))
                 {
                     S.Add(UserInputInRPN[0]);
                     UserInputInRPN.RemoveAt(0);
@@ -283,6 +311,9 @@ namespace Original
                         break;
                     case "/":
                         Result = Num1 / Num2;
+                        break;
+                    case "^":
+                        Result = Math.Pow(Num1, Num2);
                         break;
                 }
                 UserInputInRPN.RemoveAt(0);
